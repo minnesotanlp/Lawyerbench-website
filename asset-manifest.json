@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/Lawyerbench-website/static/js/main.8d35a8ca.js",
+    "main.js": "/Lawyerbench-website/static/js/main.dfc8ba17.js",
     "index.html": "/Lawyerbench-website/index.html",
-    "main.8d35a8ca.js.map": "/Lawyerbench-website/static/js/main.8d35a8ca.js.map"
+    "main.dfc8ba17.js.map": "/Lawyerbench-website/static/js/main.dfc8ba17.js.map"
   },
   "entrypoints": [
-    "static/js/main.8d35a8ca.js"
+    "static/js/main.dfc8ba17.js"
   ]
 }
