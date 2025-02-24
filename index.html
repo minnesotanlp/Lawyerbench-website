@@ -80,7 +80,7 @@
       </div>
       <div class="author">
         <a href="https://www.linkedin.com/in/robinwillisrealtor/">
-          <img src="./assets/images/robin.jpg" alt="Robin Willis">
+          <img src="./assets/images/Robin.jpg" alt="Robin Willis">
           Robin Willis
         </a>
         <div class="affiliation">Law School</div>
@@ -405,6 +405,78 @@
   </script>
   
 
+  <!-- ---------- Sample Operating Agreements Section ---------- -->
+<section class="operating-agreements-section">
+    <div class="operating-container">
+      <h2 class="section-title">Generated Operating Agreements</h2>
+      <p class="section-description">
+        Our database captures real-world business entity formation scenarios, starting with a seed scenario provided by a local business. Through conversations with the business owner, a lawyer initiates the legal process, meticulously documenting each step—from initial discussions to formal filings. The process culminates in a finalized agreement document, serving as the definitive legal outcome.
+      </p>
+      <!-- Flex container to hold two columns -->
+      <div class="agreements-grid">
+        <!-- Column 1 -->
+        <div class="agreement-column">
+          <div class="agreement-example" data-index="0">
+            <div class="agreement-tabs">
+              <button class="tab-button active" data-tab="0">Lawyer's Memo</button>
+              <button class="tab-button" data-tab="1">Seed Scenario</button>
+              <button class="tab-button" data-tab="2">Final Operating Agreement</button>
+            </div>
+            <div class="tab-content active" data-content="0">
+              <img src="./assets/gifs/Trans1.gif" alt="Intermediate Transformation">
+            </div>
+            <div class="tab-content" data-content="1">
+              <iframe src="./assets/docs/Prompt1.pdf" title="Input Prompt"></iframe>
+            </div>
+            <div class="tab-content" data-content="2">
+              <iframe src="./assets/docs/OA1.pdf" title="Final Operating Agreement"></iframe>
+            </div>
+          </div>
+        </div>
+        <!-- Column 2 -->
+        <div class="agreement-column">
+          <div class="agreement-example" data-index="1">
+            <div class="agreement-tabs">
+              <button class="tab-button active" data-tab="0">Lawyer's Memo</button>
+              <button class="tab-button" data-tab="1">Seed Scenario</button>
+              <button class="tab-button" data-tab="2">Final Operating Agreement</button>
+            </div>
+            <div class="tab-content active" data-content="0">
+              <img src="./assets/gifs/Trans2.gif" alt="Intermediate Transformation">
+            </div>
+            <div class="tab-content" data-content="1">
+              <iframe src="./assets/docs/Prompt2.pdf" title="Input Prompt"></iframe>
+            </div>
+            <div class="tab-content" data-content="2">
+              <iframe src="./assets/docs/OA2.pdf" title="Final Operating Agreement"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <script>
+    // Attach tab switching functionality to each agreement example
+    document.querySelectorAll('.agreement-example').forEach(function(agreement) {
+      const tabButtons = agreement.querySelectorAll('.tab-button');
+      const tabContents = agreement.querySelectorAll('.tab-content');
+      
+      tabButtons.forEach(function(button) {
+        button.addEventListener('click', function() {
+          const tab = this.getAttribute('data-tab');
+          // Remove active state from all buttons and contents
+          tabButtons.forEach(btn => btn.classList.remove('active'));
+          tabContents.forEach(content => content.classList.remove('active'));
+          // Activate the clicked button and corresponding content
+          this.classList.add('active');
+          agreement.querySelector('.tab-content[data-content="'+tab+'"]').classList.add('active');
+        });
+      });
+    });
+  </script>
+  
+
   <!-- ---------- Dataset Card Section ---------- -->
 <section class="dataset-card-section">
     <div class="dataset-card-container">
@@ -542,7 +614,7 @@
   
   <style>
     .data-insights-section {
-      background-color: #ffffff;
+      background-color: #f5f5f5;
       width: 100%;
       padding: 60px 0;
     }
