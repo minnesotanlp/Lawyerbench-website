@@ -4,123 +4,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>LawyerBench - Header Section</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Arial', sans-serif;
-      background-color: #f5f5f5;
-    }
-    /* Header Section */
-    header {
-      background-color: #ffffff;
-      padding: 40px 20px;
-      text-align: center;
-    }
-    .header-title {
-      font-size: 3rem;
-      font-weight: bold;
-      line-height: 1.2;
-      margin-bottom: 40px;
-      color: #333;
-    }
-    .authors-row {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 20px;
-      margin: 0 auto;
-      max-width: 1200px;
-    }
-    .author {
-      text-align: center;
-      margin: 10px;
-      flex: 0 0 auto;
-    }
-    .author img {
-      width: 100px;
-      height: 100px;
-      border-radius: 50%;
-      display: block;
-      margin: 0 auto;
-      object-fit: cover;
-    }
-    .author a {
-      text-decoration: none;
-      font-weight: bold;
-      color: #556cd6;
-      margin-top: 8px;
-      display: block;
-    }
-    .affiliation {
-      font-size: 0.85rem;
-      color: #666;
-    }
-    /* Overview Section - full width background, centered content */
-    .overview-section {
-      background-color: #f5f5f5;
-      padding: 60px 0;
-    }
-    .overview-container {
-      max-width: 1200px;
-      margin: 0 auto;
-      text-align: center;
-      padding: 0 20px;
-    }
-    .overview-container h2 {
-      font-family: Montserrat, sans-serif;
-      font-weight: 700;
-      margin-bottom: 30px;
-      color: #333;
-      font-size: 2.5rem;
-    }
-    /* Overview bullet points and text styling */
-    .overview-container ul {
-      list-style: disc;
-      margin: 0 auto 40px;
-      max-width: 70%;
-      text-align: justify;
-      padding-left: 40px;
-      font-family: 'Open Sans', sans-serif;
-      font-size: 1.15rem;
-      line-height: 1.8;
-      color: #666;
-    }
-    .overview-container li {
-      margin-bottom: 20px;
-    }
-    /* Gallery styling */
-    .overview-gallery {
-      position: relative;
-      display: inline-block;
-      margin: 40px auto 0;
-      max-width: 70%;
-      width: 100%;
-    }
-    .overview-gallery img {
-      width: 100%;
-      height: auto;
-      border: 1px solid #ccc;
-      border-radius: 8px;
-      display: block;
-    }
-    /* Position arrows outside the image frame */
-    .overview-gallery button {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      background-color: rgba(0,0,0,0.5);
-      color: white;
-      border: none;
-      padding: 8px;
-      cursor: pointer;
-    }
-    .overview-gallery #prev-button {
-      left: -50px;
-    }
-    .overview-gallery #next-button {
-      right: -50px;
-    }
-  </style>
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet" />
+
+  <link rel="stylesheet" href="./assets/css/bulma.min.css" />
+  <link rel="stylesheet" href="./assets/css/bulma-carousel.min.css" />
+  <link rel="stylesheet" href="./assets/css/bulma-slider.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css"  />
+  <link rel="stylesheet" href="./assets/css/index.css" />
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script src="https://kit.fontawesome.com/c79a85d960.js" crossorigin="anonymous"></script>
+  <script src="./assets/js/bulma-carousel.min.js"></script>
+  <script src="./assets/js/bulma-slider.min.js"></script>
+  <script src="./assets/js/index.js"></script>
+
 </head>
 <body>
 
@@ -137,14 +38,14 @@
       <div class="author">
         <a href="https://debaratidas94.github.io/">
           <img src="./assets/images/deb.jpg" alt="Debarati Das">
-          Debarati Das
+          Debarati Das<sup>*</sup>
         </a>
         <div class="affiliation">Computer Science</div>
       </div>
       <div class="author">
         <a href="https://karinjd.github.io/">
           <img src="./assets/images/karin.png" alt="Karin De Langis">
-          Karin De Langis
+          Karin De Langis<sup>*</sup>
         </a>
         <div class="affiliation">Computer Science</div>
       </div>
@@ -170,23 +71,6 @@
         <div class="affiliation">Computer Science</div>
       </div>
       <div class="author">
-        <a href="https://dykang.github.io/">
-          <img src="./assets/images/DK.jpg" alt="Dongyeop Kang">
-          Dongyeop Kang
-        </a>
-        <div class="affiliation">Computer Science</div>
-      </div>
-    </div>
-    
-    <div class="authors-row" style="margin-top: 20px;">
-      <div class="author">
-        <a href="https://www.linkedin.com/in/robinwillisrealtor/">
-          <img src="./assets/images/robin.jpg" alt="Robin Willis">
-          Robin Willis
-        </a>
-        <div class="affiliation">Law School</div>
-      </div>
-      <div class="author">
         <a href="https://www.linkedin.com/in/brendanmadson/">
           <img src="./assets/images/brendan.png" alt="Brendan Madson">
           Brendan Madson
@@ -194,8 +78,15 @@
         <div class="affiliation">Law School</div>
       </div>
       <div class="author">
+        <a href="https://www.linkedin.com/in/robinwillisrealtor/">
+          <img src="./assets/images/robin.jpg" alt="Robin Willis">
+          Robin Willis
+        </a>
+        <div class="affiliation">Law School</div>
+      </div>      
+      <div class="author">
         <a href="https://example.com/daniel">
-          <img src="./assets/images/daniel.jpg" alt="Daniel Moses">
+          <img src="./assets/images/empty.jpg" alt="Daniel Moses">
           Daniel Moses
         </a>
         <div class="affiliation">Law School</div>
@@ -210,18 +101,86 @@
       <div class="author">
         <a href="https://law.umn.edu/profiles/brett-mcdonnell">
           <img src="./assets/images/brett.jpg" alt="Brett McDonnell">
-          Brett McDonnell
+          Brett McDonnell<sup>+</sup>
         </a>
         <div class="affiliation">Law School</div>
       </div>
       <div class="author">
         <a href="https://www.law.umn.edu/profiles/daniel-schwarcz">
           <img src="./assets/images/daniel-s.png" alt="Daniel Schwarcz">
-          Daniel Schwarcz
+          Daniel Schwarcz<sup>+</sup>
         </a>
         <div class="affiliation">Law School</div>
       </div>
+      <div class="author">
+        <a href="https://dykang.github.io/">
+          <img src="./assets/images/DK.jpg" alt="Dongyeop Kang">
+          Dongyeop Kang<sup>+</sup>
+        </a>
+        <div class="affiliation">Computer Science</div>
+      </div>
     </div>
+    <div class="affiliation"><sup>*</sup>project leads, &nbsp;&nbsp;  <sup>+</sup>senior advisors</div>
+    <br><br>
+
+    <a class="subtitle" href="https://minnesotanlp.github.io/"><img src="./assets/images/UMN_NLP_logo_final_circle_transparent.png" style="height: 4em; margin-inline: 5px;"></a>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a class="subtitle" href="https://twin-cities.umn.edu/"><img src="./assets/images/university-of-minnesota-logo-png_seeklogo-43380922.png" style="height: 4em; margin-inline: 5px;"></a>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a class="subtitle" href="https://www.openphilanthropy.org/"><img src="./assets/images/Open_Philanthropy_logo.svg.png" style="height: 4em; margin-inline: 5px;"></a>
+
+
+  <div class="column has-text-centered" style="padding-top: 2rem;padding-bottom: 0;">
+    <div class="publication-links">
+      <span class="link-block">
+        <a
+          href=""
+          target="_blank"
+          class="external-link button is-normal is-rounded is-dark is-outlined"
+        >
+          <span class="icon">
+            <i class="fa-solid fa-file"></i>
+          </span>
+          <span>Paper</span>
+        </a>
+      </span>
+
+      <span class="link-block">
+        <a
+          href=""
+          target="_blank"
+          class="external-link button is-normal is-rounded is-dark is-outlined"
+        >
+          <span class="icon">
+            <i class="fa fa-laptop"></i>
+          </span>
+          <span>Data</span>
+        </a>
+      </span>  
+      <span class="link-block">
+        <a
+          href=""
+          target="_blank"
+          class="external-link button is-normal is-rounded is-dark is-outlined"
+        >
+          <span class="icon">
+            <i class="fa fa-code"></i>
+          </span>
+          <span>Code</span>
+        </a>
+      </span>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
   </header>
 
 
@@ -232,10 +191,13 @@
       <h2>Overview</h2>
       <ul>
         <li>
-          LawyerBench is revolutionizing legal AI by navigating lawyer's thought process in the entire business entity formation process—from client consultations to customer interaction to note taking to drafting and filing legal documents. The collected process data will be used for training a cutting-edge Legal LLM Agent that navigates the entirety of legal tasks and assists lawyers in their legal processing with much less cognitive burdens.
+          LawyerBench is revolutionizing legal AI by navigating lawyer's thought process in the entire business entity formation process—from client consultations to customer interaction to note taking to drafting and filing legal documents. 
         </li>
         <li>
-          A groundbreaking collaboration between our NLP lab and the Law School, this project doesn’t just automate legal workflows; it builds a rich dataset to fuel the next generation of AI-powered legal reasoning. By blending deep legal expertise with advanced AI technologies, we’re shaping the future of intelligent, accountable, and efficient legal automation.
+          The collected process data will be used for training a cutting-edge Legal LLM Agent that navigates the entirety of legal tasks and assists lawyers in their legal processing with much less cognitive burdens. This project doesn’t just automate legal workflows; it builds a rich dataset to fuel the next generation of AI-powered legal reasoning. 
+        </li>
+        <li>
+          The LawyerBench is funded by <a href="https://www.openphilanthropy.org/">Open Philanthropy</a>, and most research is conducted by a collaboration between the <a href="https://minnesotanlp.github.io/">Minnesota lab</a> and the <a href="https://law.umn.edu/">UMN Law School</a>.
         </li>
       </ul>
       <div class="overview-gallery">
@@ -249,8 +211,8 @@
   <script>
     document.addEventListener('DOMContentLoaded', function() {
       const images = [
-        { src: '/assets/images/projDiagram.png', alt: 'Project Diagram' },
-        { src: '/assets/gifs/IntroGif.gif', alt: 'Platform Tool Work Demo' }
+        { src: './assets/images/projDiagram.png', alt: 'Project Diagram' },
+        { src: './assets/gifs/IntroGif.gif', alt: 'Platform Tool Work Demo' }
       ];
       let currentIndex = 0;
       const overviewImage = document.getElementById('overview-image');
@@ -276,7 +238,7 @@
   <!-- ---------- Platform Section ---------- -->
 <section class="platform-section">
     <div class="platform-container">
-      <h2>The Platform</h2>
+      <h2>Data Collection Platform</h2>
       <p class="platform-description">
         Our database captures real-world business entity formation scenarios, starting with a seed scenario provided by a local business. Through conversations with the business owner, a lawyer initiates the legal process, meticulously documenting and taking notes of each step—from initial discussions to formal filings. The process culminates in a finalized agreement document, serving as the definitive legal outcome.
       </p>
@@ -285,7 +247,7 @@
       </p>
       <div class="video-container">
         <video controls>
-          <source src="/assets/videos/ToolVideo.mp4" type="video/mp4">
+          <source src="./assets/videos/ToolVideo.mp4" type="video/mp4">
           Your browser does not support the video tag.
         </video>
       </div>
@@ -300,80 +262,7 @@
     </div>
   </section>
   
-  <style>
-    /* ---------- Platform Section Styles ---------- */
-    .platform-section {
-      background-color: #ffffff;
-      padding: 60px 0;
-      width: 100%;
-    }
-    .platform-container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 20px;
-      text-align: center;
-    }
-    .platform-container h2 {
-      font-family: 'Montserrat', sans-serif;
-      font-weight: 700;
-      margin-bottom: 20px;
-      font-size: 2rem;
-      color: #333;
-    }
-    .platform-description {
-      font-family: 'Open Sans', sans-serif;
-      font-size: 1.15rem;
-      line-height: 1.7;
-      color: #666;
-      text-align: justify;
-      margin-bottom: 20px;
-    }
-    .platform-demo-invite {
-      font-family: 'Open Sans', sans-serif;
-      font-size: 1.1rem;
-      line-height: 1.7;
-      color: #666;
-      text-align: justify;
-      margin-bottom: 20px;
-    }
-    .video-container {
-      position: relative;
-      padding-top: 2rem;
-      padding-bottom: 56.25%;
-      height: 0;
-      overflow: hidden;
-      margin-bottom: 20px;
-    }
-    .video-container video {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      border-radius: 8px;
-    }
-    .platform-how {
-      font-family: 'Open Sans', sans-serif;
-      font-size: 1rem;
-      line-height: 1.6;
-      color: #666;
-      margin-bottom: 10px;
-      text-align: justify;
-    }
-    .platform-bullets {
-      list-style-type: none;
-      padding-left: 0.8rem;
-      font-family: 'Open Sans', sans-serif;
-      font-size: 1rem;
-      line-height: 1.6;
-      color: #666;
-      text-align: justify;
-    }
-    .platform-bullets li {
-      margin-bottom: 10px;
-    }
-  </style>
-  
+ 
 
   
   <!-- ---------- Entity Formation Workflow Section ---------- -->
@@ -405,92 +294,6 @@
     </div>
   </section>
   
-  <style>
-    /* Entity Formation Workflow Section Styles */
-    .entity-formation-section {
-      background-color: #f5f5f5;
-      padding: 60px 0;
-      width: 100%;
-    }
-    .entity-formation-container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 20px;
-      text-align: center;
-    }
-    .entity-formation-container h2 {
-      font-family: 'Montserrat', sans-serif;
-      font-weight: 700;
-      margin-bottom: 20px;
-      font-size: 2rem;
-      color: #333;
-    }
-    .entity-workflow-intro {
-      font-family: 'Open Sans', sans-serif;
-      font-size: 1.1rem;
-      margin-bottom: 20px;
-      text-align: justify;
-      color: #666;
-    }
-    .entity-gif-container {
-      text-align: center;
-      margin-bottom: 20px;
-    }
-    .entity-gif-container img {
-      max-width: 800px;
-      width: 100%;
-      height: auto;
-      border: 1px solid #ccc;
-      border-radius: 8px;
-    }
-    .entity-workflow-description {
-      font-family: 'Open Sans', sans-serif;
-      font-size: 1.15rem;
-      line-height: 1.8;
-      color: #666;
-      text-align: justify;
-      margin-bottom: 30px;
-    }
-    /* Gallery Styles */
-    .gallery-view {
-      position: relative;
-      text-align: center;
-      margin-bottom: 40px;
-      padding: 0 20px;
-    }
-    .gallery-image-container {
-      margin: 0 auto;
-    }
-    .gallery-image-container img {
-      border: 1px solid #ccc;
-      border-radius: 8px;
-      display: block;
-      margin: 0 auto;
-    }
-    .gallery-caption {
-      font-family: 'Open Sans', sans-serif;
-      font-size: 0.9rem;
-      font-weight: bold;
-      margin-top: 8px;
-    }
-    .gallery-nav {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      background-color: rgba(0,0,0,0.5);
-      color: white;
-      border: none;
-      padding: 8px;
-      cursor: pointer;
-    }
-    #gallery-prev {
-      left: -50px;
-    }
-    #gallery-next {
-      right: -50px;
-    }
-  </style>
-  
   <script>
     // Gallery items data
     const galleryItems = [
@@ -498,7 +301,7 @@
         src: "./assets/images/MainTasks.png",
         alt: "Main Tasks Diagram",
         caption: "Main Tasks Diagram",
-        width: { xs: "90%", md: "55%" }
+        width: { xs: "100%", md: "80%" }
       },
       {
         src: "./assets/images/TaskSubtask.png",
@@ -558,65 +361,17 @@
     </div>
   </section>
   
-  <style>
-    .workflow-visualization-section {
-      background-color: #ffffff;
-      padding: 60px 0;
-      width: 100%;
-    }
-    .workflow-visualization-container {
-      position: relative;
-      text-align: center;
-      margin: 0 auto;
-      max-width: 90%;
-    }
-    .workflow-visualization-container h2 {
-      font-family: 'Montserrat', sans-serif;
-      font-weight: 700;
-      margin-bottom: 20px;
-      font-size: 2rem;
-      color: #333;
-    }
-    .video-container video {
-      width: 100%;
-      border: 1px solid #ccc;
-      border-radius: 8px;
-    }
-    .workflow-caption {
-      margin-top: 10px;
-      font-family: 'Open Sans', sans-serif;
-      font-weight: bold;
-      text-align: center;
-      color: #333;
-    }
-    .workflow-nav {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      background-color: rgba(0,0,0,0.5);
-      color: white;
-      border: none;
-      padding: 8px;
-      cursor: pointer;
-    }
-    #workflow-prev {
-      left: -40px;
-    }
-    #workflow-next {
-      right: -40px;
-    }
-  </style>
-  
+
   <script>
     (function(){
       const videos = [
         {
-          src: "/assets/videos/vid1.mov",
+          src: "./assets/videos/vid1.mov",
           alt: "Scenario 1",
           caption: "Scenario 1"
         },
         {
-          src: "/assets/videos/vid2.mov",
+          src: "./assets/videos/vid2.mov",
           alt: "Scenario 2",
           caption: "Scenario 2"
         }
@@ -660,58 +415,6 @@
     </div>
   </section>
   
-  <style>
-    /* Dataset Card Section Styles */
-    .dataset-card-section {
-      background-color: #f5f5f5;
-      width: 100%;
-      padding: 60px 0;
-    }
-    .dataset-card-container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 20px;
-      text-align: center;
-    }
-    .dataset-card-container h2 {
-      font-family: 'Montserrat', sans-serif;
-      font-weight: 700;
-      margin-bottom: 20px;
-      font-size: 2rem;
-      color: #333;
-    }
-    .dataset-description {
-      font-family: 'Open Sans', sans-serif;
-      font-size: 1.15rem;
-      line-height: 1.7;
-      color: #666;
-      text-align: justify;
-      margin-bottom: 20px;
-    }
-    /* JSON Preview Card Styles */
-    .json-preview {
-      max-height: 400px;
-      overflow-y: auto;
-      border: 1px solid #ccc;
-      border-radius: 8px;
-      font-family: monospace;
-      font-size: 0.9rem;
-      padding: 8px;
-      text-align: left;
-      background-color: #ffffff;
-    }
-    .json-line {
-      padding: 2px 4px;
-    }
-    /* Background colors based on indent and index parity */
-    .indent-0.even { background-color: white; }
-    .indent-0.odd { background-color: #f5f5f5; }
-    .indent-1.even, .indent-2.even, .indent-3.even { background-color: #f0f8ff; }
-    .indent-1.odd, .indent-2.odd, .indent-3.odd { background-color: #e6f2ff; }
-    /* Hover styles: indent 1 gets a different hover color */
-    .indent-1:hover { background-color: #fff2b2 !important; }
-    .json-line:not(.indent-1):hover { background-color: #ffffcc !important; }
-  </style>
   
   <script>
     // The sample JSON string
@@ -843,7 +546,7 @@
       padding: 60px 0;
     }
     .data-insights-container {
-      max-width: 1200px;
+      max-width: 1000px;
       margin: 0 auto;
       padding: 0 20px;
       text-align: center;
@@ -851,8 +554,8 @@
     .data-insights-container h2 {
       font-family: 'Montserrat', sans-serif;
       font-weight: 700;
-      margin-bottom: 20px;
-      font-size: 2rem;
+      margin-bottom: 40px;
+      font-size: 3rem;
       color: #333;
     }
     .insights-gallery {
@@ -862,27 +565,30 @@
     }
     .insights-research {
       margin-bottom: 1rem;
-      font-family: 'Open Sans', sans-serif;
-      font-size: 1.2rem;
+      font-family: 'Noto Sans', sans-serif;
+      font-size: 2rem;
+      font-style: bold;
       color: #333;
+      margin-bottom: 2rem;
+
     }
     .insights-image {
       max-width: 100%;
-      width: 70%;
+      width: 80%;
       height: auto;
       border: 1px solid #ccc;
       border-radius: 8px;
     }
     .insights-list-container {
       text-align: center;
-      width: 70%;
+      width: 80%;
       margin: 1rem auto 0;
     }
     .insights-list-container ul {
       padding-left: 1rem;
       margin: 0;
       text-align: justify;
-      font-family: 'Open Sans', sans-serif;
+      font-family: 'Noto Sans', sans-serif;
       font-size: 1.2rem;
       line-height: 1.6;
       color: #333;
@@ -918,7 +624,7 @@
       const slides = [
         {
           researchQuestion: "Is the time distribution across subtasks consistent among different law RAs?",
-          src: "/assets/images/DataInsights1.png",
+          src: "./assets/images/DataInsights1.png",
           alt: "Data Insights Slide 1",
           insights: [
             "There is a consistent pattern across the four law RAs, with more than 50% of their time dedicated to Subtask 1: Gather Basic Information, and around 10–20% allocated to Subtask 2: Decide on recommendation to cline(s). Subtasks 3: Send memo and Subtask 4: Write an Operating Agreement each account for less than 20%, while Tax Treatment takes up less than 5% of the total time.",
@@ -927,7 +633,7 @@
         },
         {
           researchQuestion: "Is the time distribution across nodes consistent among different law RAs?",
-          src: "/assets/images/dataInsights2.png",
+          src: "./assets/images/dataInsights2.png",
           alt: "Data Insights Slide 2",
           insights: [
             "There are large variations among each law RAs and differences across each law RA."
@@ -935,7 +641,7 @@
         },
         {
           researchQuestion: "What is the order in which law RAs complete their subtasks? Does it align with the predefined diagram?",
-          src: "/assets/images/dataInsights3.png",
+          src: "./assets/images/dataInsights3.png",
           alt: "Data Insights Slide 3",
           insights: [
             "Law RA 1 and Law RA 2 follow the order specified in the diagram. Interestingly, before writing the memo or Operating Agreement (OA), they often revisit Subtask 1: Gather Basic Information to refresh their understanding of the client’s details.",
@@ -945,7 +651,7 @@
         },
         {
           researchQuestion: "What is the order in which law RAs complete their subtasks? Does it align with the predefined diagram?",
-          src: "/assets/images/dataInsights4.png",
+          src: "./assets/images/dataInsights4.png",
           alt: "Data Insights Slide 4",
           insights: [
             "Law RA 1 and Law RA 2 switch between interactive, observable, and introspective subtasks, frequently alternating between different types.",
@@ -992,16 +698,14 @@
     <div class="bottom-container">
       <h2>Call for Participation</h2>
       <p class="bottom-body">
-        We welcome collaborators, funders, and researchers interested in exploring large language models for real-world legal tasks. If you’d like to try our tool or contribute to our dataset, please get in touch!
-      </p>
-      <div class="contact-info">
-        <p>Contact us at <strong>XXX@umn.edu</strong></p>
+        We plan to scale up our data collection and develop innovative legal reasoning benchmarks for evaluating long-range, multi-turn, deep legal reasoning tasks.
+        We welcome collaborators, funders, and researchers interested in exploring AI for knowledge intensive tasks, such as legal processing. If you’d like to try our tool or contribute to our dataset, please get in touch! Contact us at <strong>dongyeop@umn.edu</strong></p>
       </div>
     </div>
   </section>
   
   <!-- ---------- Citation Section ---------- -->
-  <section class="citation-section">
+  <!-- <section class="citation-section">
     <div class="bottom-container">
       <h2>Citation</h2>
       <pre class="citation-code">
@@ -1014,92 +718,15 @@
   }
       </pre>
     </div>
-  </section>
+  </section> -->
   
   <!-- ---------- Footer Section ---------- -->
   <footer class="site-footer">
     <div class="footer-container">
-      <p>© 2021-2025 Minnesota NLP &amp; University of Minnesota. All Rights Reserved</p>
+      <p>© 2024-2025 Minnesota NLP &amp; University of Minnesota. All Rights Reserved</p>
     </div>
   </footer>
   
-  <style>
-    /* Shared container styling for bottom sections */
-    .bottom-container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 20px;
-      text-align: center;
-    }
-    /* Call for Participation Section */
-    .call-for-participation {
-      background-color: #f5f5f5;
-      width: 100%;
-      padding-top: 40px;
-      padding-bottom: 60px;
-    }
-    .call-for-participation h2 {
-      font-family: 'Montserrat', sans-serif;
-      font-weight: 700;
-      margin-bottom: 20px;
-      font-size: 2rem;
-      color: #333;
-    }
-    .call-for-participation .bottom-body {
-      font-family: 'Open Sans', sans-serif;
-      font-size: 1.15rem;
-      line-height: 1.7;
-      color: #666;
-      text-align: justify;
-      margin-bottom: 20px;
-    }
-    .call-for-participation .contact-info p {
-      font-family: 'Open Sans', sans-serif;
-      font-size: 1.1rem;
-      color: #666;
-      text-align: justify;
-    }
-    /* Citation Section */
-    .citation-section {
-      background-color: #ffffff;
-      width: 100%;
-      padding-top: 40px;
-      padding-bottom: 60px;
-    }
-    .citation-section h2 {
-      font-family: 'Montserrat', sans-serif;
-      font-weight: 700;
-      margin-bottom: 20px;
-      font-size: 2rem;
-      color: #333;
-    }
-    .citation-code {
-      background-color: #f5f5f5;
-      padding: 16px;
-      border-radius: 8px;
-      overflow-x: auto;
-      font-family: monospace;
-      font-size: 0.9rem;
-      text-align: left;
-    }
-    /* Footer Section */
-    .site-footer {
-      background-color: #ffffff;
-      width: 100%;
-      padding-top: 16px;
-      padding-bottom: 16px;
-    }
-    .footer-container {
-      max-width: 800px;
-      margin: 0 auto;
-      text-align: center;
-    }
-    .footer-container p {
-      font-family: 'Open Sans', sans-serif;
-      font-size: 0.9rem;
-      color: #666;
-    }
-  </style>
   
 
 </body>

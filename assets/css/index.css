@@ -1,0 +1,451 @@
+body {
+    margin: 0;
+    font-family: 'Noto Sans', sans-serif;
+    background-color: #f5f5f5;
+  }
+  /* Header Section */
+  header {
+    background-color: #ffffff;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  .header-title {
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 40px;
+    color: #333;
+  }
+  .authors-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+  .author {
+    text-align: center;
+    margin: 10px;
+    flex: 0 0 auto;
+  }
+  .author img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+    object-fit: cover;
+  }
+  .author a {
+    text-decoration: none;
+    color: #556cd6;
+    margin-top: 8px;
+    display: block;
+  }
+  .affiliation {
+    font-size: 0.85rem;
+    color: #666;
+  }
+  /* Overview Section - full width background, centered content */
+  .overview-section {
+    background-color: #f5f5f5;
+    padding: 60px 0;
+  }
+  .overview-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0 20px;
+  }
+  .overview-container h2 {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 700;
+    margin-bottom: 40px;
+    color: #333;
+    font-size: 3rem;
+    
+  }
+  /* Overview bullet points and text styling */
+  .overview-container ul {
+    list-style: disc;
+    margin: 0 auto 40px;
+    max-width: 100%;
+    text-align: justify;
+    padding-left: 40px;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: #666;
+  }
+  .overview-container li {
+    margin-bottom: 20px;
+  }
+  /* Gallery styling */
+  .overview-gallery {
+    position: relative;
+    display: inline-block;
+    margin: 40px auto 0;
+    max-width: 100%;
+    width: 100%;
+  }
+  .overview-gallery img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    display: block;
+  }
+  /* Position arrows outside the image frame */
+  .overview-gallery button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+  }
+  .overview-gallery #prev-button {
+    left: -50px;
+  }
+  .overview-gallery #next-button {
+    right: -50px;
+  }
+
+
+
+  /* ---------- Platform Section Styles ---------- */
+  .platform-section {
+    background-color: #ffffff;
+    padding: 40px 0;
+    width: 100%;
+  }
+  .platform-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+  }
+  .platform-container h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    margin-bottom: 40px;
+    font-size: 3rem;
+    color: #333;
+  }
+  .platform-description {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 1.15rem;
+    line-height: 1.7;
+    color: #666;
+    text-align: justify;
+    margin-bottom: 20px;
+  }
+  .platform-demo-invite {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #666;
+    text-align: justify;
+    margin-bottom: 20px;
+  }
+  .video-container {
+    position: relative;
+    padding-top: 2rem;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    margin-bottom: 20px;
+  }
+  .video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+  }
+  .platform-how {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 10px;
+    text-align: justify;
+  }
+  .platform-bullets {
+    list-style-type: none;
+    padding-left: 0.8rem;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #666;
+    text-align: justify;
+  }
+  .platform-bullets li {
+    margin-bottom: 10px;
+  }
+
+    /* Entity Formation Workflow Section Styles */
+    .entity-formation-section {
+      background-color: #f5f5f5;
+      padding: 60px 0;
+      width: 100%;
+    }
+    .entity-formation-container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0 20px;
+      text-align: center;
+    }
+    .entity-formation-container h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      margin-bottom: 40px;
+      font-size: 3rem;
+      color: #333;
+    }
+    .entity-workflow-intro {
+      font-family: 'Noto Sans', sans-serif;
+      font-size: 1.1rem;
+      margin-bottom: 20px;
+      text-align: justify;
+      color: #666;
+    }
+    .entity-gif-container {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .entity-gif-container img {
+      max-width: 800px;
+      width: 100%;
+      height: auto;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+    .entity-workflow-description {
+      font-family: 'Noto Sans', sans-serif;
+      font-size: 1.15rem;
+      line-height: 1.8;
+      color: #666;
+      text-align: justify;
+      margin-bottom: 30px;
+    }
+    /* Gallery Styles */
+    .gallery-view {
+      position: relative;
+      text-align: center;
+      margin-bottom: 40px;
+      padding: 0 20px;
+    }
+    .gallery-image-container {
+      margin: 0 auto;
+    }
+    .gallery-image-container img {
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      display: block;
+      margin: 0 auto;
+    }
+    .gallery-caption {
+      font-family: 'Noto Sans', sans-serif;
+      font-size: 1.5rem;
+      margin-top: 8px;
+    }
+    .gallery-nav {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: rgba(0,0,0,0.5);
+      color: white;
+      border: none;
+      padding: 8px;
+      cursor: pointer;
+    }
+    #gallery-prev {
+      left: -50px;
+    }
+    #gallery-next {
+      right: -50px;
+    }
+  
+
+
+    .workflow-visualization-section {
+      background-color: #ffffff;
+      padding: 60px 0;
+      width: 100%;
+    }
+    .workflow-visualization-container {
+      position: relative;
+      text-align: center;
+      margin: 0 auto;
+      max-width: 90%;
+    }
+    .workflow-visualization-container h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      margin-bottom: 40px;
+      font-size: 3rem;
+      color: #333;
+    }
+    .video-container video {
+      width: 100%;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+    .workflow-caption {
+      margin-top: 10px;
+      font-family: 'Noto Sans', sans-serif;
+      font-size: 1.5rem;
+      text-align: center;
+      color: #333;
+    }
+    .workflow-nav {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: rgba(0,0,0,0.5);
+      color: white;
+      border: none;
+      padding: 8px;
+      cursor: pointer;
+    }
+    #workflow-prev {
+      left: -40px;
+    }
+    #workflow-next {
+      right: -40px;
+    }
+  
+
+    /* Dataset Card Section Styles */
+    .dataset-card-section {
+      background-color: #f5f5f5;
+      width: 100%;
+      padding: 60px 0;
+    }
+    .dataset-card-container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0 20px;
+      text-align: center;
+    }
+    .dataset-card-container h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      margin-bottom: 40px;
+      font-size: 3rem;
+      color: #333;
+    }
+    .dataset-description {
+      font-family: 'Noto Sans', sans-serif;
+      font-size: 1.15rem;
+      line-height: 1.7;
+      color: #666;
+      text-align: justify;
+      margin-bottom: 20px;
+    }
+    /* JSON Preview Card Styles */
+    .json-preview {
+      max-height: 400px;
+      overflow-y: auto;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-family: monospace;
+      font-size: 0.9rem;
+      padding: 8px;
+      text-align: left;
+      background-color: #ffffff;
+    }
+    .json-line {
+      padding: 2px 4px;
+    }
+    /* Background colors based on indent and index parity */
+    .indent-0.even { background-color: white; }
+    .indent-0.odd { background-color: #f5f5f5; }
+    .indent-1.even, .indent-2.even, .indent-3.even { background-color: #f0f8ff; }
+    .indent-1.odd, .indent-2.odd, .indent-3.odd { background-color: #e6f2ff; }
+    /* Hover styles: indent 1 gets a different hover color */
+    .indent-1:hover { background-color: #fff2b2 !important; }
+    .json-line:not(.indent-1):hover { background-color: #ffffcc !important; }
+
+
+
+    /* Shared container styling for bottom sections */
+    .bottom-container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0 20px;
+      text-align: center;
+    }
+    /* Call for Participation Section */
+    .call-for-participation {
+      background-color: #f5f5f5;
+      width: 100%;
+      padding-top: 40px;
+      padding-bottom: 60px;
+    }
+    .call-for-participation h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      margin-bottom: 40px;
+      font-size: 3rem;
+      color: #333;
+    }
+    .call-for-participation .bottom-body {
+      font-family: 'Noto Sans', sans-serif;
+      font-size: 1.15rem;
+      line-height: 1.7;
+      color: #666;
+      text-align: justify;
+      margin-bottom: 20px;
+    }
+    .call-for-participation .contact-info p {
+      font-family: 'Noto Sans', sans-serif;
+      font-size: 1.1rem;
+      color: #666;
+      text-align: justify;
+    }
+    /* Citation Section */
+    .citation-section {
+      background-color: #ffffff;
+      width: 100%;
+      padding-top: 40px;
+      padding-bottom: 60px;
+    }
+    .citation-section h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      margin-bottom: 40px;
+      font-size: 3rem;
+      color: #333;
+    }
+    .citation-code {
+      background-color: #f5f5f5;
+      padding: 16px;
+      border-radius: 8px;
+      overflow-x: auto;
+      font-family: monospace;
+      font-size: 0.9rem;
+      text-align: left;
+    }
+    /* Footer Section */
+    .site-footer {
+      background-color: #ffffff;
+      width: 100%;
+      padding-top: 16px;
+      padding-bottom: 16px;
+    }
+    .footer-container {
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .footer-container p {
+      font-family: 'Noto Sans', sans-serif;
+      font-size: 0.9rem;
+      color: #666;
+    }
